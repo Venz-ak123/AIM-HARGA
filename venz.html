@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VenzNewEra - Cheat Paling Brutal!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    body {
+      background: black; color: white;
+      text-align: center;
+      transition: background 0.5s, color 0.5s;
+    }
+
+    /* Background GIF Api */
+    body::before {
+      content: "";
+      position: fixed; top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: url('https://media.giphy.com/media/3o7buirYcmV5nSwIRW/giphy.gif') no-repeat center center/cover;
+      opacity: 0.4; z-index: -1;
+    }
+
+    /* Loading Screen */
+    #loadingScreen {
+      position: fixed; width: 100%; height: 100vh;
+      background: black; display: flex;
+      align-items: center; justify-content: center;
+      font-size: 24px; z-index: 9999;
+      animation: glitch 1s infinite alternate;
+    }
+
+    /* Efek Glitch */
+    @keyframes glitch {
+      0% { text-shadow: 2px 2px red, -2px -2px blue; }
+      100% { text-shadow: -2px -2px red, 2px 2px blue; }
+    }
+
+    /* Main Screen */
+    #mainScreen {
+      display: none; padding: 30px;
+    }
+    
+    h1 {
+      font-size: 28px;
+      text-shadow: 0 0 10px cyan, 0 0 20px red;
+      animation: glitch 0.5s infinite alternate;
+    }
+
+    .button {
+      display: inline-block; background: red;
+      padding: 12px 20px; margin: 10px;
+      color: white; font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer; transition: 0.3s;
+      box-shadow: 0 0 10px red;
+    }
+    .button:hover {
+      background: yellow;
+      color: black;
+      transform: scale(1.1);
+      box-shadow: 0 0 20px yellow;
+    }
+
+    /* Testimoni */
+    #leaderboard {
+      width: 80%; margin: auto;
+      background: rgba(255,255,255,0.1);
+      padding: 10px; border-radius: 5px;
+      height: 100px; overflow: hidden;
+      position: relative;
+    }
+    .leaderboard-content {
+      position: absolute;
+      animation: scroll 5s linear infinite;
+    }
+    @keyframes scroll {
+      0% { top: 100%; }
+      100% { top: -100%; }
+    }
+
+    /* Ulasan */
+    #ulasanSection {
+      margin-top: 30px;
+    }
+    textarea {
+      width: 80%; padding: 10px;
+      background: rgba(255,255,255,0.1);
+      border: none; color: white;
+      margin-top: 10px;
+    }
+    #ulasanList {
+      margin-top: 20px; list-style: none;
+      padding: 0;
+    }
+    #ulasanList li {
+      background: rgba(255,255,255,0.1);
+      margin: 5px auto; padding: 10px;
+      width: 80%; border-radius: 5px;
+    }
+
+    /* Mode Gelap / Terang */
+    .mode-button {
+      display: block; margin: 20px auto;
+      background: cyan; color: black;
+      padding: 10px; border: none;
+      font-size: 14px; cursor: pointer;
+      transition: 0.3s;
+    }
+    .mode-button:hover {
+      background: white;
+    }
+
+    /* Teks Berjalan */
+    marquee {
+      font-size: 14px;
+      color: yellow;
+      background: rgba(255,255,255,0.1);
+      padding: 5px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- LOADING SCREEN -->
+  <div id="loadingScreen">
+    <p>LOADING... Tunggu bentar njing!</p>
+  </div>
+
+  <!-- MAIN SCREEN -->
+  <div id="mainScreen">
+    <h1>VENZNEWERA - CHEAT PALING BRUTAL!</h1>
+    <marquee>🔥🔥🔥 DI BELI BANGSAT INI FILE NO BAND BAND GW BALIKIN UANG LO ANJING GASKWEUN! 🔥🔥🔥</marquee>
+    
+    <p>Langsung beli, jangan banyak cingcong!</p>
+
+    <a href="https://wa.me/+6285700513821?text=Order AIM AVENGERS" class="button">🔥 AIM AVENGERS - Rp 50K 🔥</a>
+    <a href="https://wa.me/+6285700513821?text=Order AIM SUPER" class="button">💀 AIM SUPER - Rp 70K 💀</a>
+    <a href="https://wa.me/+6285700513821?text=Order AIM LITE" class="button">⚡ AIM LITE - Rp 15K ⚡</a><a href="https://wa.me/+6285700513821?text=Order AIM EXTRA MAX" class="button">💣 AIM EXTRA MAX - Rp 100K 💣</a>
+    <a href="https://wa.me/+6285700513821?text=Order AIM SUPREM" class="button">👑 AIM SUPREM - Rp 120K 👑</a>
+    <a href="https://wa.me/+6285700513821?text=Order AIM EXTREME SUPER" class="button">🚀 AIM EXTREME SUPER - Rp 150K 🚀</a>
+
+    <!-- Testimoni / Leaderboard -->
+    <h2>🔥 Testimoni Pelanggan 🔥</h2>
+    <div id="leaderboard">
+      <div class="leaderboard-content">
+        <p>💀 *"AIM GG parah, ga ada obat!"* - User A</p>
+        <p>🔥 *"Auto jago, lawan nangis!"* - User B</p>
+        <p>💣 *"Worth it banget, admin fast respon!"* - User C</p>
+      </div>
+    </div>
+
+    <!-- Ulasan -->
+    <div id="ulasanSection">
+      <h2>Tinggalkan Ulasan</h2>
+      <textarea id="ulasanInput" rows="4" placeholder="Tulis ulasan lo di sini..."></textarea>
+      <br>
+      <button class="button" onclick="kirimUlasan()">Kirim Ulasan</button>
+      <ul id="ulasanList"></ul>
+    </div>
+
+    <!-- Tombol Mode -->
+    <button class="mode-button" onclick="toggleMode()">🌗 Ganti Mode 🌗</button>
+  </div>
+
+  <script>
+    window.onload = function() {
+      setTimeout(() => {
+        document.getElementById('loadingScreen').style.display = 'none';
+        document.getElementById('mainScreen').style.display = 'block';
+      }, 2000);
+    }
+
+    function kirimUlasan() {
+      let ulasanInput = document.getElementById('ulasanInput');
+      let ulasanText = ulasanInput.value.trim();
+      if (ulasanText !== "") {
+        let ulasanList = document.getElementById('ulasanList');
+        let li = document.createElement('li');
+        li.textContent = ulasanText;
+        ulasanList.appendChild(li);
+        ulasanInput.value = "";
+      }
+    }
+
+    function toggleMode() {
+      document.body.style.background = document.body.style.background === 'black' ? 'white' : 'black';
+      document.body.style.color = document.body.style.color === 'white' ? 'black' : 'white';
+    }
+  </script>
+
+</body>
+</html>
